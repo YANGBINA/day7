@@ -1,0 +1,149 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 0.32rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "微软雅黑";
+    text-size-adjust: 100%;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 0.32rem;
+}
+
+img,
+div,
+body,
+html,
+ul,
+li,
+a {
+    -webkit-touch-callout: none;
+}
+
+input,
+button {
+    outline: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+input {
+    -webkit-appearance: none;
+    border: 0
+}
+
+html,
+body,
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: url('../images/1.png');
+    width: 100%;
+    background-size: 100% 100%;
+    height: 4rem;
+    p {
+        width: 80%;
+        height: 0.8rem;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        margin-left: 10%;
+        margin-top: 0.3rem;
+        span {
+            margin-left: 0.2rem;
+        }
+    }
+}
+
+.main {
+    flex: 1;
+    overflow: hidden;
+    width: 100%;
+    .nav {
+        width: 100%;
+        height: auto;
+        .one {
+            display: flex;
+            flex-wrap: wrap;
+            dl {
+                width: 20%;
+                height: auto;
+                text-align: center;
+                margin-top: 0.5rem;
+            }
+        }
+        .page {
+            padding-left: 45%;
+        }
+    }
+    .d {
+        width: 100%;
+        height: 1rem;
+        dl {
+            display: flex;
+            width: 100%;
+            height: auto;
+            dt {
+                img {
+                    width: 1.3rem;
+                    height: 1.3rem;
+                }
+            }
+            dd {
+                line-height: 0.6rem;
+            }
+        }
+    }
+    .e {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        dl {
+            display: flex;
+            width: 50%;
+            height: auto;
+            margin-top: 0.3rem;
+            dt {
+                line-height: 0.6rem;
+                h2 {
+                    font-weight: bold;
+                }
+                p {
+                    color: #ccc;
+                }
+            }
+            dd {
+                img {
+                    width: 1.3rem;
+                    height: 1.3rem;
+                }
+            }
+        }
+    }
+}
